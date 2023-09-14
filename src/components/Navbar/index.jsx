@@ -1,7 +1,8 @@
 import React from 'react';
 import {Container, Wrapper, Section, Logo, Link, Main} from './style';
 import { navbar } from '../../utils/navbar';
-import {Outlet, useNavigate} from 'react-router-dom';
+import { Outlet, useNavigate } from 'react-router-dom';
+import { Button } from '../Generic';
 
 
 const Navbar = () => {
@@ -19,7 +20,7 @@ const Navbar = () => {
             })}
           </Section>
           <Section>
-            <button>Sign In</button>
+            <Button type='dark'>Sign In</Button>
           </Section>
         </Wrapper>
       </Main>
