@@ -38,8 +38,21 @@ outline: none;
 border: 1px solid #E6E9EC;
 font-size: ${({fontSize}) => fontSize ? `${fontSize}px` : '14px'};
 height: ${({height}) => height ? `${height}px` : '44px'};
-width: ${({width}) => width ? `${width}px` : '100%'};
+width: ${({ width }) => width ? `${width}px` : '100%'};
+padding-left: ${({icon}) => icon ? "35px" : "20px"};
 /* ${getType}; */
 `;
 
-export{Container};
+const Wrapper = styled.div`
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: ${({ width }) => width ? `${width}px` : '100%'};
+`;
+
+const Icon = styled.div`
+  position: absolute;
+  left: 10px;
+`
+
+export{Container, Wrapper, Icon};

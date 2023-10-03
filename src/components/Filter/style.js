@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ReactComponent as houses } from "../../assets/icon/house.svg";
+import { ReactComponent as houses } from "../../assets/icon/home-icon.svg";
 import { ReactComponent as filter } from "../../assets/icon/setting-lines.svg";
 import { ReactComponent as search } from "../../assets/icon/search-icon.svg";
 import { Select } from "antd";
